@@ -1,8 +1,8 @@
 ![OneSignal Logo](https://onesignal.com/assets/common/logo_onesignal_color.png)
 # OneSignal.RestApiv3.Client
-A General purpose REST Api Client written in C# language for the OneSignal API v3
+A General purpose REST Api Client written in C# language for the OneSignal API v3 that support Async
 
-[![Build status](https://ci.appveyor.com/api/projects/status/f8vnbla1mef503sr/branch/master?svg=true)](https://ci.appveyor.com/project/MundiPagg/onesignal-csharp-sdk/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/f8vnbla1mef503sr?svg=true)](https://ci.appveyor.com/project/Alegrowin/onesignal-restapiv3-client)
 
 ## Install via NuGet
 
