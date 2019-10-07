@@ -1,3 +1,7 @@
+### 1.1.1
+
+- Fixes wrong error verification
+
 ### 1.0.0 2017-11-18
 
 - Add .Net Standard 2.0 Support
