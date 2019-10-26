@@ -1,3 +1,7 @@
+### 1.1.1  2019-10-07
+
+- Fixes wrong error verification that caused no exceptions to ever be thrown
+
 ### 1.0.0 2017-11-18
 
 - Add .Net Standard 2.0 Support

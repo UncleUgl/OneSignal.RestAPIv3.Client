@@ -105,7 +105,7 @@ namespace OneSignal.RestAPIv3.Client.Resources.Notifications
         }
 
         private T GetResponseData<T>(IRestResponse<T> restResponse) {
-            if (!(restResponse.StatusCode != HttpStatusCode.Created || restResponse.StatusCode != HttpStatusCode.OK))
+            if (restResponse.StatusCode != HttpStatusCode.Created && restResponse.StatusCode != HttpStatusCode.OK)
             {
                 ThrowIfError(restResponse);
             }
