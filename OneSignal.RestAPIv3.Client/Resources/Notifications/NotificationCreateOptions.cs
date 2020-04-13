@@ -500,6 +500,15 @@ namespace OneSignal.RestAPIv3.Client.Resources.Notifications
         [JsonProperty("isChrome")]
         public bool? DeliverToChrome { get; set; }
 
+        /// <summary><br/>
+        /// Indicates if the message type when targeting with include_external_user_ids for cases where an email and push subscriber has the same external user id.<br/>
+        /// Indicates whether to send to all devices registered under your app's Google Chrome Apps &amp; Extension platform.<br/>
+        /// Platforms: ALL<br/>
+        /// </summary>
+        [JsonProperty("channel_for_external_user_ids")]
+        [JsonConverter(typeof(StringEnumConverter))]
+        public ChannelForExternalUserIdsEnum? ChannelForExternalUserIds { get; set; }
+
         /// <summary>
         /// Default constructor that initializes empty Contents and Headings.
         /// All other collection objects needs to be instantiated in order to be able to be serialized.

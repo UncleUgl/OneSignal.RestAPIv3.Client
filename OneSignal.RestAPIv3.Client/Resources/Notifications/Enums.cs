@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 using RestSharp.Deserializers;
 
 namespace OneSignal.RestAPIv3.Client.Resources.Notifications
@@ -145,6 +148,22 @@ namespace OneSignal.RestAPIv3.Client.Resources.Notifications
         /// <summary>
         /// value = email address
         /// </summary>
+        Email
+    }
+
+    [JsonConverter(typeof(StringEnumConverter))]
+    public enum ChannelForExternalUserIdsEnum
+    {
+        // <summary>
+        /// value = push notification
+        /// </summary>
+        [EnumMember(Value = "push")]
+        Push,
+
+        /// <summary>
+        /// value = email address
+        /// </summary
+        [EnumMember(Value = "email")]
         Email
     }
 }
