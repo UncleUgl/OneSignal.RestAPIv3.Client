@@ -56,57 +56,67 @@ namespace OneSignal.RestAPIv3.Client.Resources.Notifications
     /// <summary>
     /// Possible options for delaying notification.
     /// </summary>
+    [JsonConverter(typeof(StringEnumConverter))]
     public enum DelayedOptionEnum
     {
         /// <summary>
         /// Deliver at a specific time-of-day in each users own timezone
         /// </summary>
+        [EnumMember(Value = "timezone")]
         TimeZone,
 
         /// <summary>
         /// Deliver at the same time of day as each user last used your app.
         /// </summary>
+        [EnumMember(Value = "last-active")]
         LastActive,
 
         /// <summary>
         /// If send_after is used, this takes effect after the send_after time has elapsed.
         /// </summary>
+        [EnumMember(Value = "send_after")]
         SendAfter
     }
 
     /// <summary>
     /// Class used to describe notification filter field type used in filter operations.
     /// </summary>
+    [JsonConverter(typeof(StringEnumConverter))]
     public enum NotificationFilterFieldTypeEnum
     {
         /// <summary>
         /// relation = "&gt;" or "&lt;"<br/>
         /// hours_ago = number of hours before or after the users last session. Example: "1.1"
         /// </summary>
+        [EnumMember(Value = "last_session")]
         LastSession,
 
         /// <summary>
         /// relation = "&gt;" or "&lt;"<br/>
         /// hours_ago = number of hours before or after the users first session. Example: "1.1"
         /// </summary>
+        [EnumMember(Value = "first_session")]
         FirstSession,
 
         /// <summary>
         /// relation = "&gt;", "&lt;", "=" or "!="<br/>
         /// value = number sessions. Example: "1"
         /// </summary>
+        [EnumMember(Value = "session_count")]
         SessionCount,
 
         /// <summary>
         /// relation = "&gt;" or "&lt;"<br/>
         /// value = Time in seconds the user has been in your app. Example: "3600"
         /// </summary>
+        [EnumMember(Value = "session_time")]
         SessionTime,
 
         /// <summary>
         /// relation = "&gt;", "&lt;", or "="<br/>
         /// value = Amount in USD a user has spent on IAP (In App Purchases). Example: "0.99"
         /// </summary>
+        [EnumMember(Value = "amount_spent")]
         AmountSpent,
 
         /// <summary>
@@ -114,6 +124,7 @@ namespace OneSignal.RestAPIv3.Client.Resources.Notifications
         /// key = SKU purchased in your app as an IAP (In App Purchases). Example: "com.domain.100coinpack"<br/>
         /// value = value of SKU to compare to. Example: "0.99"
         /// </summary>
+        [EnumMember(Value = "bought_sku")]
         BoughtSku,
 
         /// <summary>
@@ -122,6 +133,7 @@ namespace OneSignal.RestAPIv3.Client.Resources.Notifications
         /// value = Tag value to compare. Not required for "exists" or "not_exists".<br/>
         /// Example: See <see cref="!:https://documentation.onesignal.com/reference#section-formatting-filters">Formatting Filters</see>
         /// </summary>
+        [EnumMember(Value = "tag")]
         Tag,
 
         /// <summary>
@@ -129,12 +141,14 @@ namespace OneSignal.RestAPIv3.Client.Resources.Notifications
         /// value = 2 character language code. Example: "en".<br/>
         /// For a list of all language codes go <see cref="!:https://documentation.onesignal.com/docs/language-localization">here</see>
         /// </summary>
+        [EnumMember(Value = "language")]
         Language,
 
         /// <summary>
         /// relation = "&gt;", "&lt;", "=" or "!="<br/>
         /// value = app version. Example: "1.0.0"
         /// </summary>
+        [EnumMember(Value = "app_version")]
         AppVersion,
 
         /// <summary>
@@ -143,12 +157,20 @@ namespace OneSignal.RestAPIv3.Client.Resources.Notifications
         /// long = longitude<br/>
         /// 
         /// </summary>
+        [EnumMember(Value = "location")]
         Location,
 
         /// <summary>
         /// value = email address
         /// </summary>
-        Email
+        [EnumMember(Value = "email")]
+        Email,
+
+        // <summary>
+        /// value = 2-digit Country code
+        /// </summary>
+        [EnumMember(Value = "country")]
+        Country
     }
 
     [JsonConverter(typeof(StringEnumConverter))]

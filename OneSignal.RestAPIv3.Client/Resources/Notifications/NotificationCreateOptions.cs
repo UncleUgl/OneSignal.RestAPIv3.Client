@@ -352,7 +352,6 @@ namespace OneSignal.RestAPIv3.Client.Resources.Notifications
         /// Platforms: ALL<br/>
         /// </summary>
         [JsonProperty("delayed_option")]
-        [JsonConverter(typeof(DelayedOptionJsonConverter))]
         public DelayedOptionEnum? DelayedOption { get; set; }
 
         /// <summary><br/>
