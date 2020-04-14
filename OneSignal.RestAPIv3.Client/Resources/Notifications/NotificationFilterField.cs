@@ -12,7 +12,6 @@ namespace OneSignal.RestAPIv3.Client.Resources.Notifications
         /// The type of the filter field.
         /// </summary>
 		[JsonProperty("field")]
-        [JsonConverter(typeof(NotificationFilterFieldTypeConverter))]
         public NotificationFilterFieldTypeEnum Field { get; set; }
 
         /// <summary>
