@@ -31,7 +31,7 @@ var client = new OneSignalClient(""); // Use your Api Key
             client.Notifications.Create(options);
 ```
 
-## OneSignal Api Oficial Documentation
+## OneSignal Api Official Documentation
 [OneSignal Server API Documentation](https://documentation.onesignal.com/reference)
 
 ## Contributing
