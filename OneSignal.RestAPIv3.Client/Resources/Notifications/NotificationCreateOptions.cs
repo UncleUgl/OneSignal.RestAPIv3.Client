@@ -83,6 +83,16 @@ namespace OneSignal.RestAPIv3.Client.Resources.Notifications
         public string ChromeWebIcon { get; set; }
 
         /// <summary><br/>
+        /// Sets the web push notification's large image. <br/>
+        /// An image URL linking to a valid image. <br/>
+        /// Common image types are supported; GIF will not animate. <br/>
+        /// We recommend 2:1 aspect ratio and a minimum width of 512px to display well on high DPI devices. <br/>
+        /// Common sizes: 512x256px 1440x720px
+        /// </summary>
+        [JsonProperty("chrome_web_image")]
+        public string ChromeWebImage { get; set; }
+
+        /// <summary><br/>
         /// The notification's subtitle, a map of language codes to text for each language.<br/>
         /// Each hash must have a language code string for a key, mapped to the localized text you would like users to receive for that language. <br/>
         /// A default title may be displayed if a title is not provided.<br/>
