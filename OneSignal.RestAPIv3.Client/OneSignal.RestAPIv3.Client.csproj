@@ -6,7 +6,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <IncludeSymbols>true</IncludeSymbols>
     <IncludeSource>true</IncludeSource>
-    <Version>1.1.2</Version>
+    <Version>1.1.3</Version>
     <PackageIcon>https://raw.githubusercontent.com/Alegrowin/OneSignal.RestAPIv3.Client/master/OneSignal.RestAPIv3.Client/onesignal_large_icon_default.png</PackageIcon>
     <PackageProjectUrl>https://github.com/Alegrowin/OneSignal.RestAPIv3.Client</PackageProjectUrl>
     <PackageLicense>https://github.com/Alegrowin/OneSignal.RestAPIv3.Client/blob/master/LICENSE</PackageLicense>
@@ -19,8 +19,8 @@ Feel Free to contribute! :)</Description>
 </PackageReleaseNotes>
     <ApplicationIcon />
     <Win32Resource />
-    <AssemblyVersion>1.1.2.0</AssemblyVersion>
-    <FileVersion>1.1.2.0</FileVersion>
+    <AssemblyVersion>1.1.3.0</AssemblyVersion>
+    <FileVersion>1.1.3.0</FileVersion>
     <PackageId>OneSignal.RestAPIv3.Client</PackageId>
   </PropertyGroup>
 
