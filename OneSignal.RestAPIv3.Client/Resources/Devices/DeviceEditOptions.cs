@@ -135,5 +135,17 @@ namespace OneSignal.RestAPIv3.Client.Resources.Devices
         /// </summary>
         [JsonProperty("lat")]
         public double? Latitude { get; set; }
+
+        /// <summary>
+        /// External User Id, a custom user Id
+        /// </summary>
+        [JsonProperty("external_user_id")]
+        public string ExternalUserId { get; set; }
+
+        /// <summary>
+        /// Country - Country code in the ISO 3166-1 Alpha 2 format
+        /// </summary>
+        [JsonProperty("country")]
+        public string Country { get; set; }
     }
 }
