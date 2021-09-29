@@ -346,6 +346,13 @@ namespace OneSignal.RestAPIv3.Client.Resources.Notifications
         public string CollapseId { get; set; }
 
         /// <summary><br/>
+        /// Display multiple notifications at once with different topics.
+        /// Platforms: Push - All Browsers<br/>
+        /// </summary>
+        [JsonProperty("web_push_topic")]
+        public string WebPushTopic { get; set; }
+
+        /// <summary><br/>
         /// Schedule notification for future delivery.<br/>
         /// Eventhough API suggests diffent datetime formats, we are using following format: "2015-09-24 14:00:00 GMT-0700"<br/>
         /// Platforms: ALL<br/>
